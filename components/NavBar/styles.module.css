@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px grey;
+  padding: 10px 20px;
+}
+
+.cart {
+  width: 25px;
+  height: 25px;
+}
+
+.cartCon {
+  position: relative;
+}
+
+.cartChip {
+  min-width: 16px;
+  height: 16px;
+  background-color: #ff6161;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: -8px;
+  right: -8px;
+}

@@ -1,0 +1,139 @@
+.app {
+  background: no-repeat;
+}
+
+.shopNow {
+  text-decoration: underline;
+  display: block;
+  text-align: center;
+}
+
+.main {
+  padding: 20px;
+}
+
+.productsListCon {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.productImageCon {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  margin: 20px 0px;
+}
+
+.productImage {
+  height: 100%;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  margin: 5px;
+}
+
+.productTitle {
+  height: 60px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.list {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divider {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.cartBtn {
+  margin-top: 10px;
+  background-color: dodgerblue;
+  border: 0px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mycart {
+  text-align: center;
+  margin: 30px 0px;
+  text-decoration: underline;
+}
+
+.home {
+  width: max-content;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+
+.backToHomeCon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.noRecordFound {
+  width: 200px;
+  height: 200px;
+}
+
+.productBottomOptions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.productBottomOptions svg {
+  width: 30px;
+  height: 30px;
+}
+
+.productClassesContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.productClassesContainer button {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  all: unset;
+}
+
+@media (min-width: 600px) {
+  .productsListCon {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+  .divider {
+    display: none;
+  }
+  .list {
+    box-shadow: 0px 0px 1px #000;
+  }
+
+  .cartContainer {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .productsListCon {
+    grid-template-columns: repeat(4, 1fr); /* Four columns for large screens */
+  }
+}

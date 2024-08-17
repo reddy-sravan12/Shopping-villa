@@ -1,0 +1,22 @@
+.toast {
+  color: white;
+  background-color: rgb(168, 234, 168);
+  border-left: 2px solid green;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  padding: 0px 10px;
+  overflow: hidden; /* Ensure content doesn’t overflow */
+  opacity: 0; /* Initially hidden */
+  transition: width 0.5s ease, opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 49px;
+}
+
+.toastOpened {
+  width: max-content;
+  opacity: 1;
+}
