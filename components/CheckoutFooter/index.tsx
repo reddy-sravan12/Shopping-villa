@@ -22,8 +22,11 @@ const CheckoutCard = () => {
     caluculateTotal();
   }, [itemsIntoCart]);
   return (
-    <>{total > 0 && <div className={classes.total}>Total: {total}</div>}</>
-  );
+    <>
+
+    {total > 0 &&<div style={{display:'flex',justifyContent:'space-between'}}><button>Buy now</button> <div className={classes.total}>Total: {total}</div></div>}
+      </>
+);
 };
 
 export default CheckoutCard;
